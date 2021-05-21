@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор случайных паролей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="puzzle.html">Загадки</a></li>
+                    <li class="nav__item"><a class="nav__link" href="guess.html">Угадайка</a></li>
+                    <li class="nav__item"><a class="nav__link" href="guess-for-two.html">Угадайка для 2-х игроков</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Генератор паролей</a></li>
+                </ul>
+            </nav>
+        </header>        
+        <div class="container">
+            <div class="content">
+                <h1 class="content__title">Генератор случайных паролей</h1>
+                <form class="form">
+                    <div class="form__item">
+                        <p class="form__text" id="info">
+                            Выберите необходимую длину нового пароля:
+                        </p>
+                        <input class="form__input" id="passLength" type="number" min=4 max="20" value="10">
+                    </div>
+                    <a class="form__btn" id="button" href="#" onClick="passGeneraton();">Создать</a>
+                    <div class="form__item">
+                        <p class="form__text">Ваш новый пароль:</p>
+                        <input class="form__input" id="result" type="text">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__inner">
+                <p class="footer__copy">
+                    Copyright &copy; <time datetime="2021">2021</time> 3msse
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/pass-gen.js"></script>
+</body>
+</html>
