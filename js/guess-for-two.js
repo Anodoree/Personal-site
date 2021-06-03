@@ -36,7 +36,7 @@ function guess(){
         hide("button");
         showButton("reload-button");
     } else if(isNaN(userAnswer) || userAnswer <= 0 || userAnswer >= 100){
-        write("Введите число от 1 до 100.");
+        write("Введите число от 0 до 100.");
     } else if(userAnswer > answer){
         write("Ваш ответ больше загаданного.");
     } else if(userAnswer < answer){
